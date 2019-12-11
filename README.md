@@ -16,13 +16,15 @@
 {{ value|cut:" " }}
 ```
 * date过滤器：将一个日期按照指定的格式，格式化成字符串。
-# 数据 
 ```python
+# 数据 
+
 context = { "birthday": datetime.now()
 }
 ```
-# 模版 
 ```python
+# 模版 
+
 {{ birthday|date:"Y/m/d" }}
 ```
 * default过滤器:如果值被评估为 False 。比如 [] ， "" ， None ， {} 等这些在 if 判断中为 False 的值，都会 使用 default 过滤器提供的默认值。
